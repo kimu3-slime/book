@@ -16,7 +16,7 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/kimu3-slime/math-fun-book  # あなたのリポジトリのURL
+  url: https://github.com/kimu3-slime/book  # あなたのリポジトリのURL
   path_to_book: book1  # 本のソースがあるフォルダ
 
 # Add GitHub buttons to your book
@@ -41,4 +41,4 @@ sphinx:
 
 # 追加された設定
 url: https://kimu3-slime.github.io
-baseurl: /math-fun-book
+baseurl: /book
