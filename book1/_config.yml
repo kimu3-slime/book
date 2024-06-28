@@ -1,0 +1,44 @@
+# Book settings
+title: あなたの本のタイトル
+author: あなたの名前
+copyright: "2024"
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+  kernel_name: julia-1.10
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/kimu3-slime/math-fun-book  # あなたのリポジトリのURL
+  path_to_book: book1  # 本のソースがあるフォルダ
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+# LaTeX-specific settings
+latex:
+  latex_engine: xelatex
+  use_jupyterbook_latex: true
+
+# Jupyter Book settings
+sphinx:
+  config:
+    nb_custom_formats:
+      .jl:
+        - jupytext.reads
+        - fmt: jl:light
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# 追加された設定
+url: https://kimu3-slime.github.io
+baseurl: /math-fun-book
